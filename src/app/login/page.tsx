@@ -52,31 +52,23 @@ export default function Login() {
 
   return (
     <main className="w-full h-[100vh] flex">
-      <div className={`${showLogin ? "flex" : "hidden"} w-[100%] md:w-[50%] flex-col gap-4 md:gap-2 justify-center px-52 items-center`}>
-        <h1 className="text-center text-2xl font-semibold">Entrar</h1>
+      <div className={`${showLogin ? "flex" : "hidden"} w-[100%] lg:w-[60%] px-20 flex-col gap-4 md:gap-2 justify-center items-center`}>
+        <h1 className="text-center text-2xl font-semibold text-[--blue-theme]">Entrar</h1>
         <Input className="border-gray-500/15 border" type="text" placeholder="Digite seu email" />
         <Input className="border-gray-500/15 border" type="text" placeholder="Digite sua senha" />
-        <div className="mt-2 flex justify-between w-[100%]" >
-          <div className="flex items-center space-x-2">
-            <Checkbox id="terms" />
-            <label
-              htmlFor="terms"
-              className="text-sm text-[--color-text] font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            >
-              Manter o login
-            </label>
-          </div>
-          <Link href="/forgot-password" className="text-[--color-text]">Esqueceu sua senha?</Link>
+        <div className="flex justify-between items-center w-[100%] px-2" >
+          <Button variant="ghost" onClick={toggleSections} className="text-[--color-text] px-0 text-sm font-normal">Não tem conta?</Button>
+          <Link href="/forgot-password" className="text-[--color-text] text-sm">Esqueceu sua senha?</Link>
         </div>
-        <Button className="mt-4 md:text-lg px-8 py-6">Entrar</Button>
+        <Button className="md:text-lg px-12 py-6 w-[100%]">Entrar</Button>
       </div>
-      <div className={`${showLogin ? "flex" : "hidden"} md:flex w-[50%] h-[100vh] bg-[--blue-theme] px-12 ${showLogin ? "rounded-l-[120px]" : "rounded-r-[120px]"} flex-col items-center gap-2 justify-center`}>
-        <h1 className="text-[--white] font-bold text-3xl md:text-5xl">{title}</h1>
-        <p className="text-[--white] text-base md:text-lg">{subtitle}</p>
-        <Button className="mt-4 md:text-lg px-8 py-6" onClick={toggleSections}>{textButton}</Button>
+      <div className={`${showLogin ? "flex" : "hidden"} hidden md:flex w-[50%] h-[100vh] bg-[--blue-theme] px-12 ${showLogin ? "rounded-l-[120px]" : "rounded-r-[120px]"} flex-col items-center gap-2 justify-center`}>
+        <h1 className="text-[--white] font-bold text-3xl md:text-xl">{title}</h1>
+        <p className="text-[--white] text-center">{subtitle}</p>
+        <Button className="mt-4 px-8 py-6 md:px-6 md:py-4" onClick={toggleSections}>{textButton}</Button>
       </div>
-      <div className={`${showLogin ? "hidden" : "flex"} w-[100%] md:w-[50%] flex-col gap-4 md:gap-2 justify-center px-10 items-center`}>
-        <h1 className="text-center text-2xl font-semibold">Cadastro</h1>
+      <div className={`${showLogin ? "hidden" : "flex"} w-[100%] lg:w-[50%] flex-col gap-2 justify-center px-10 items-center`}>
+        <h1 className="text-center text-2xl font-semibold text-[--blue-theme]">Cadastro</h1>
         <Input className="border-gray-500/15 border" type="text" placeholder="Digite seu nome completo" />
         <Input className="border-gray-500/15 border" type="text" placeholder="Digite seu nome de crachá" />
         <Input 
@@ -89,7 +81,7 @@ export default function Login() {
         <Input className="border-gray-500/15 border" type="email" placeholder="Digite seu email" />
         <Input 
           className="border-gray-500/15 border" 
-          type="text" 
+          type="number" 
           value={numero} 
           onChange={(e) => handleInputChange(e, setNumero, 11)} 
           placeholder="Digite seu número" 
@@ -181,7 +173,7 @@ export default function Login() {
           <Input className="border-gray-500/15 border" type="password" placeholder="Confirme sua senha" />
         </div>
         <Input className="border-gray-500/15 border" type="text" placeholder="Observações(opcional)" />
-        <Button className="mt-4 md:text-lg px-8 py-6">Cadastrar</Button>
+        <Button className="mt-4 md:text-lg px-8 py-6 w-[100%]">Cadastrar</Button>
       </div>
     </main>
   );
