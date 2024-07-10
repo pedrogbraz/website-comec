@@ -1,4 +1,6 @@
 import Inicio from "@/components/inicio";
+import MapContainer from "@/components/map";
+import Mapa from "@/components/Mapa";
 import { Navbar } from "@/components/navbar";
 import Patrocinadores from "@/components/patrocinadores";
 import Image from "next/image";
@@ -11,6 +13,7 @@ export default function Home() {
         <Inicio />
       </main>
       <Patrocinadores />
+      <Mapa />
     </>
   );
 }
