@@ -7,7 +7,9 @@
 @layer base {
   :root {
     --white: #fff;
-    --blue-theme: #001f3d;
+    --loginButton: #fff;
+    --login: #0B274E;
+    --blue-theme: #fff;
     --orange-theme: #f3952f;
     --zinc-color: #1d1d1d;
     --title-color: #1d1d1d;
@@ -47,6 +49,9 @@
 
   .dark {
     --title-color: #fff;
+    --blue-theme: #0B274E;
+    --login: #fff;
+    --loginButton: #0B274E;
 
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -83,7 +88,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--blue-theme);
   }
 }
 
