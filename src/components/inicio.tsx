@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { IoMdMail } from "react-icons/io";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
-import PhotoCarousel from "./PhotoCarousel";
+import { Carrosel } from "./Carrosel";
+import MapContainer from "./map";
 
 export default function Inicio() {
   return (
@@ -17,19 +18,18 @@ export default function Inicio() {
             <Link href="/" className="text-sm md:text-base text-[--white] flex items-center rounded-lg px-4 py-2 font-semibold bg-[--orange-theme] hover:bg-[#f39639e8] hover:scale-105 duration-300">
               Inscreva-se
             </Link>
-            <Link href="/" className="px-4 py-2 flex items-center text-[--title-color] gap-2 rounded-lg text-sm md:text-base font-semibold shadow-md hover:scale-105 duration-300">
+            <Link href="/" className="px-2 py-2 flex items-center bg-[--white] text-[--zinc-color] gap-2 rounded-lg text-sm md:text-base font-semibold shadow-md hover:scale-105 duration-300">
               <IoMdMail className="size-6 p-[4px] bg-[--orange-theme] rounded-md hover:scale-110 hover:rotate-2 duration-300" />
               suporte@comec.com
             </Link>
           </div>
           <div className="flex justify-center md:justify-start gap-4">
-            <Link className="text-green-600 p-2 shadow-md rounded-lg hover:scale-110 hover:rotate-2 duration-300" href="/"><FaWhatsapp className="size-5" /></Link>
-            <Link className="text-[#d62976] p-2 shadow-md rounded-lg hover:scale-110 hover:rotate-2 duration-300" href="/"><FaInstagram className="size-5" /></Link>
-            <Link className="text-blue-700 p-2 shadow-md rounded-lg hover:scale-110 hover:rotate-2 duration-300" href="/"><FaFacebook className="size-5" /></Link>
+            <Link className="text-green-600 p-2 shadow-md rounded-lg bg-[--white] hover:scale-110 hover:rotate-2 duration-300" href="/"><FaWhatsapp className="size-5" /></Link>
+            <Link className="text-[#d62976] p-2 shadow-md rounded-lg bg-[--white] hover:scale-110 hover:rotate-2 duration-300" href="https://www.instagram.com/comecpi/"><FaInstagram className="size-5" /></Link>
           </div>
         </div>
-        <div className="hidden md:flex md:w-[40%]">
-          <PhotoCarousel />
+        <div className="hidden md:flex md:w-[42%]">
+          <Carrosel />
         </div>
       </main>
     </>

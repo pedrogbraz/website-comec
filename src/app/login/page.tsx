@@ -53,19 +53,19 @@ export default function Login() {
   return (
     <main className="w-full h-[100vh] flex">
       <div className={`${showLogin ? "flex" : "hidden"} w-[100%] lg:w-[60%] px-20 flex-col gap-4 md:gap-2 justify-center items-center`}>
-        <h1 className="text-center text-2xl font-semibold text-[--blue-theme]">Entrar</h1>
+        <h1 className="text-center text-2xl font-semibold text-[--login]">Entrar</h1>
         <Input className="border-gray-500/15 border" type="text" placeholder="Digite seu email" />
         <Input className="border-gray-500/15 border" type="text" placeholder="Digite sua senha" />
         <div className="flex justify-between items-center w-[100%] px-2" >
           <Button variant="ghost" onClick={toggleSections} className="text-[--color-text] px-0 text-sm font-normal">Não tem conta?</Button>
           <Link href="/forgot-password" className="text-[--color-text] text-sm">Esqueceu sua senha?</Link>
         </div>
-        <Button className="md:text-lg px-12 py-6 w-[100%]">Entrar</Button>
+        <Button className="md:text-lg px-12 py-6 w-[100%] bg-[--login] hover:bg-[--login]/90">Entrar</Button>
       </div>
-      <div className={`${showLogin ? "flex" : "hidden"} hidden md:flex w-[50%] h-[100vh] bg-[--blue-theme] px-12 ${showLogin ? "rounded-l-[120px]" : "rounded-r-[120px]"} flex-col items-center gap-2 justify-center`}>
-        <h1 className="text-[--white] font-bold text-3xl md:text-xl">{title}</h1>
-        <p className="text-[--white] text-center">{subtitle}</p>
-        <Button className="mt-4 px-8 py-6 md:px-6 md:py-4" onClick={toggleSections}>{textButton}</Button>
+      <div className={`${showLogin ? "flex" : "hidden"} hidden md:flex w-[50%] h-[100vh] bg-[--login] px-12 ${showLogin ? "rounded-l-[120px]" : "rounded-r-[120px]"} flex-col items-center gap-2 justify-center`}>
+        <h1 className="text-[--loginButton] font-bold text-3xl md:text-xl">{title}</h1>
+        <p className="text-[--loginButton] text-center">{subtitle}</p>
+        <Button className="mt-4 px-8 py-6 md:px-6 md:py-4 text-[--login] bg-[--loginButton] hover:bg-[--loginButton]/90" onClick={toggleSections}>{textButton}</Button>
       </div>
       <div className={`${showLogin ? "hidden" : "flex"} w-[100%] lg:w-[50%] flex-col gap-2 justify-center px-10 items-center`}>
         <h1 className="text-center text-2xl font-semibold text-[--blue-theme]">Cadastro</h1>
@@ -173,7 +173,7 @@ export default function Login() {
           <Input className="border-gray-500/15 border" type="password" placeholder="Confirme sua senha" />
         </div>
         <Input className="border-gray-500/15 border" type="text" placeholder="Observações(opcional)" />
-        <Button className="mt-4 md:text-lg px-8 py-6 w-[100%]">Cadastrar</Button>
+        <Button className="mt-4 md:text-lg px-8 py-6 w-[100%] bg-[--login] hover:bg-[--login]/90">Cadastrar</Button>
       </div>
     </main>
   );

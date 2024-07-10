@@ -36,7 +36,10 @@ export function Navbar() {
   return (
     <NavigationMenu>
       <NavigationMenuList className="flex justify-between w-[100vw] py-4 px-10 md:px-20">
-        <div className="flex">
+        <div className="flex items-center">
+        <NavigationMenuItem>
+            <Image src="/logo.png" width={50} height={50} alt="Logo" />
+        </NavigationMenuItem>
         <NavigationMenuItem className="md:hidden">
           <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
           <NavigationMenuContent>
