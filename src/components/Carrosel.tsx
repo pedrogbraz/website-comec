@@ -17,16 +17,12 @@ const images = [
   "/slide1.jpg",
   "/slide2.jpg",
   "/slide3.jpg",
-  "/slide4.jpg",
-  "/slide5.jpg",
 ];
-const titles = ["Title 1", "Title 2", "Title 3", "Title 4", "Title 5"];
+const titles = ["Title 1", "Title 2", "Title 3"];
 const descriptions = [
   "Description 1",
   "Description 2",
-  "Description 3",
-  "Description 4",
-  "Description 5",
+  "Description 3"
 ];
 
 export function Carrosel() {
