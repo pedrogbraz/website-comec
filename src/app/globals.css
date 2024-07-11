@@ -9,6 +9,7 @@
     --white: #fff;
     --loginButton: #fff;
     --login: #0B274E;
+    --inputLogin: #fff;
     --blue-theme: #fff;
     --orange-theme: #f3952f;
     --zinc-color: #1d1d1d;
@@ -52,6 +53,7 @@
     --blue-theme: #0B274E;
     --login: #fff;
     --loginButton: #0B274E;
+    --inputLogin: #0B274E;
 
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -102,4 +104,14 @@
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
