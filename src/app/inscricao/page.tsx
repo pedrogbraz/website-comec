@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 
 export default function Inscricao() {
@@ -14,6 +15,7 @@ export default function Inscricao() {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

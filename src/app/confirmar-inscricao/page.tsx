@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 
 export default function Confirmar() {
@@ -14,6 +15,7 @@ export default function Confirmar() {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

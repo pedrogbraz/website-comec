@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Inicio from "@/components/inicio";
 import MapContainer from "@/components/map";
 import Mapa from "@/components/Mapa";
@@ -14,6 +15,7 @@ export default function Home() {
       </main>
       <Patrocinadores />
       <Mapa />
+      <Footer />
     </>
   );
 }

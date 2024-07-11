@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
 
@@ -19,6 +20,7 @@ export default function Submissao() {
           <Link className="flex w-[200px] items-center justify-center text-lg bg-[--orange-theme] text-[--white] font-medium px-4 py-2 rounded-lg hover:bg-[#f39639e8]" href="/">Ler edital</Link>
         </div>
       </main>
+      <Footer />
     </>
   )
 }
