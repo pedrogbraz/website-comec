@@ -25,7 +25,7 @@ export default function Container({
 
   return (
     <div
-    className="flex flex-col items-center bg-[--white] gap-2 p-4 shadow-xl rounded-2xl">
+    className="flex items-center bg-[--white] p-4 shadow-xl rounded-2xl">
       <Link href={link}>
         <Image
           alt="Logo"
@@ -35,8 +35,6 @@ export default function Container({
           width={180}
         />
       </Link>
-      <h1 className="text-lg font-bold text-[--zinc-color]">{titulo}</h1>
-      <p className="text-center text-[--color-text]">{description}</p>
     </div>
   );
 }
