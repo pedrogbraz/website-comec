@@ -6,7 +6,7 @@ export default function Mapa() {
       <main className="w-[100vw] mt-32 px-10 pt-3 md:px-20 space-y-6">
         <div className="flex flex-col items-center px-32">
           <div className="flex w-[100vw] flex-col items-center">
-            <h1 className="text-[1.563rem] font-bold uppercase text-[--white] mb-6">
+            <h1 className="text-[1.563rem] font-bold uppercase text-[--title-color] mb-6">
               Localização do Evento
             </h1>
           </div>

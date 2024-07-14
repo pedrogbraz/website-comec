@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,14 +24,15 @@ export default function Container({
   ];
 
   return (
-    <div className="flex flex-col items-center bg-[--white] gap-2 p-5 shadow-xl rounded-3xl">
+    <div
+    className="flex flex-col items-center bg-[--white] gap-2 p-4 shadow-xl rounded-2xl">
       <Link href={link}>
         <Image
           alt="Logo"
           className="hover:scale-110 hover:rotate-2 duration-300"
           height={150}
           src={img}
-          width={150}
+          width={180}
         />
       </Link>
       <h1 className="text-lg font-bold text-[--zinc-color]">{titulo}</h1>

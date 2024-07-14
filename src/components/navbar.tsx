@@ -35,7 +35,7 @@ const components: { title: string; href: string; }[] = [
 export function Navbar() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="flex justify-between w-[100vw] py-4 px-10 md:px-20">
+      <NavigationMenuList className="flex justify-between w-[100vw] py-2 px-10 md:px-20 border-[--footer] border-b">
         <div className="flex items-center">
         <NavigationMenuItem>
             <Image src="/logo.png" width={50} height={50} alt="Logo" />
@@ -50,6 +50,7 @@ export function Navbar() {
                 <ListItem className="py-2" href="/inscricao" title="Inscrição" />
                 <ListItem className="py-2" href="/submissao" title="Submissão" />
                 <ListItem className="py-2" href="/confirmar-inscricao" title="Confirmar Inscrição" />
+                <ListItem className="py-2" href="/comissao" title="Comissão" />
               </div>
               <Separator />
               <ListItem className="py-1" href="/patrocinadores" title="Patrocinadores" />
@@ -83,6 +84,13 @@ export function Navbar() {
         <Link href="/parceiros" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Parceiros
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="hidden md:flex">
+        <Link href="/comissao" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Comissão
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
