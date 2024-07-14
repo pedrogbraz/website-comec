@@ -1,28 +1,27 @@
-"use client"
+"use client";
 
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
-const images = [
-  "/slide1.jpg",
-  "/slide2.jpg",
-  "/slide3.jpg",
-];
-const titles = ["Title 1", "Title 2", "Title 3"];
-const descriptions = [
-  "Description 1",
-  "Description 2",
-  "Description 3"
+const slides = [
+  {
+    image: "/slide1.jpg",
+    title: "Title 1",
+    description: "Description 1",
+  },
+  {
+    image: "/slide2.jpg",
+    title: "Title 2",
+    description: "Description 2",
+  },
+  {
+    image: "/slide3.jpg",
+    title: "Title 3",
+    description: "Description 3",
+  },
 ];
 
 export function Carrosel() {
@@ -38,19 +37,19 @@ export function Carrosel() {
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {images.map((image, index) => (
+        {slides.map((slide, index) => (
           <CarouselItem key={index}>
             <div className="relative w-full h-[520px]">
               <Image
-                src={image}
+                src={slide.image}
                 alt={`Slide ${index + 1}`}
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
               />
-              <div className="absolute flex flex-col w-[100%] h-[100%] justify-end items-start p-12 bg-black bg-opacity-50 text-white">
-                <h1 className="text-2xl font-medium">{titles[index]}</h1>
-                <p className="text-sm">{descriptions[index]}</p>
+              <div className="absolute flex flex-col w-full h-full justify-end items-start p-12 bg-black bg-opacity-50 text-white">
+                <h1 className="text-2xl font-medium">{slide.title}</h1>
+                <p className="text-sm">{slide.description}</p>
               </div>
             </div>
           </CarouselItem>
