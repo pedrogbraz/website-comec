@@ -14,6 +14,7 @@
     --orange-theme: #f3952f;
     --zinc-color: #1d1d1d;
     --title-color: #1d1d1d;
+    --footer: #1d1d1d52;
     --color-text: #949494;
 
 
@@ -50,6 +51,7 @@
 
   .dark {
     --title-color: #fff;
+    --footer: #ffffff4f;
     --blue-theme: #0B274E;
     --login: #fff;
     --loginButton: #0B274E;
