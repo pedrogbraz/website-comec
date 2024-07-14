@@ -85,7 +85,7 @@ export default function Parceiros() {
         <Navbar />
         <div className="flex flex-col items-center gap-12 border-[--orange-theme] border p-8 rounded-2xl">
           <div className="flex flex-col items-center">
-            <h1 className="absolute -mt-[55px] bg-[--orange-theme] text-[1.563rem] font-bold uppercase text-black py-1 px-3 rounded-lg">
+            <h1 className="absolute -mt-[55px] bg-[--orange-theme] text-[1.563rem] font-medium uppercase text-black py-1 px-3 rounded-lg">
               Parceiros
             </h1>
           </div>

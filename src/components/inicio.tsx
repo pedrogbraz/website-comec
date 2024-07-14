@@ -5,6 +5,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Carrosel } from "./Carrosel";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Inicio() {
   return (
@@ -34,7 +35,8 @@ export default function Inicio() {
           transition={{ duration: 0.3, delay: 0.7 }}
           className="text-center md:text-start text-[--color-text] md:max-w-[70%] md:text-lg"
         >
-          Traçando caminhos de excelência cirúrgica: junte-se às linhas de aprendizado e inovação!
+          Traçando caminhos de excelência cirúrgica: junte-se às linhas de
+          aprendizado e inovação!
         </motion.p>
         <div className="flex justify-center md:justify-start gap-4">
           <motion.div

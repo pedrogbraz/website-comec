@@ -74,7 +74,7 @@ export default function Comissao() {
       <main className="w-[100vw] px-10 md:px-20 space-y-12">
         <Navbar />
         <div className="flex flex-col items-center border-[--orange-theme] border rounded-2xl p-8">
-          <h1 className="absolute -mt-[55px] bg-[--orange-theme] text-[1.563rem] font-bold uppercase text-black py-1 px-3 rounded-lg">
+          <h1 className="absolute -mt-[55px] bg-[--orange-theme] text-[1.563rem] font-medium uppercase text-black py-1 px-3 rounded-lg">
             Comissões
           </h1>
           <div className="grid justify-center items-center md:grid-cols-2 lg:grid-cols-5 gap-4">
